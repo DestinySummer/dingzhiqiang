@@ -1,1 +1,1 @@
-print("提交作业我写作业了哈哈")
+print("i am study")
