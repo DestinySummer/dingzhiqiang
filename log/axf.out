@@ -1,0 +1,3082 @@
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+
+Error: 'conf/axf.conf' doesn't exist
+[2018-08-29 19:40:19 +0800] [29079] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 19:40:19 +0800] [29079] [INFO] Listening at: http://127.0.0.1:8000 (29079)
+[2018-08-29 19:40:19 +0800] [29079] [INFO] Using worker: sync
+[2018-08-29 19:40:19 +0800] [29083] [INFO] Booting worker with pid: 29083
+[2018-08-29 19:40:19 +0800] [29084] [INFO] Booting worker with pid: 29084
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+[2018-08-29 20:08:36 +0800] [29079] [INFO] Handling signal: term
+[2018-08-29 20:08:36 +0800] [29083] [INFO] Worker exiting (pid: 29083)
+[2018-08-29 20:08:36 +0800] [29084] [INFO] Worker exiting (pid: 29084)
+[2018-08-29 20:08:36 +0800] [29079] [INFO] Shutting down: Master
+[2018-08-29 20:08:38 +0800] [29285] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:08:38 +0800] [29285] [INFO] Listening at: http://127.0.0.1:8000 (29285)
+[2018-08-29 20:08:38 +0800] [29285] [INFO] Using worker: sync
+[2018-08-29 20:08:38 +0800] [29288] [INFO] Booting worker with pid: 29288
+[2018-08-29 20:08:38 +0800] [29288] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:08:38 +0800] [29288] [INFO] Worker exiting (pid: 29288)
+[2018-08-29 20:08:38 +0800] [29289] [INFO] Booting worker with pid: 29289
+[2018-08-29 20:08:38 +0800] [29289] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:08:38 +0800] [29289] [INFO] Worker exiting (pid: 29289)
+[2018-08-29 20:08:38 +0800] [29285] [INFO] Shutting down: Master
+[2018-08-29 20:08:38 +0800] [29285] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:08:39 +0800] [29290] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:08:39 +0800] [29290] [INFO] Listening at: http://127.0.0.1:8000 (29290)
+[2018-08-29 20:08:39 +0800] [29290] [INFO] Using worker: sync
+[2018-08-29 20:08:39 +0800] [29293] [INFO] Booting worker with pid: 29293
+[2018-08-29 20:08:39 +0800] [29293] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:08:39 +0800] [29293] [INFO] Worker exiting (pid: 29293)
+[2018-08-29 20:08:39 +0800] [29290] [INFO] Shutting down: Master
+[2018-08-29 20:08:39 +0800] [29290] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:08:42 +0800] [29301] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:08:42 +0800] [29301] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:42 +0800] [29301] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:43 +0800] [29301] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:43 +0800] [29301] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:44 +0800] [29301] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:44 +0800] [29301] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:45 +0800] [29301] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:45 +0800] [29301] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:46 +0800] [29301] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:46 +0800] [29301] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:47 +0800] [29301] [ERROR] Can't connect to ('127.0.0.1', 8000)
+[2018-08-29 20:08:50 +0800] [29304] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:08:50 +0800] [29304] [ERROR] Connection in use: ('127.0.0.1', 8000)
+[2018-08-29 20:08:50 +0800] [29304] [ERROR] Retrying in 1 second.
+[2018-08-29 20:08:51 +0800] [29304] [INFO] Listening at: http://127.0.0.1:8000 (29304)
+[2018-08-29 20:08:51 +0800] [29304] [INFO] Using worker: sync
+[2018-08-29 20:08:51 +0800] [29307] [INFO] Booting worker with pid: 29307
+[2018-08-29 20:08:51 +0800] [29307] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:08:51 +0800] [29307] [INFO] Worker exiting (pid: 29307)
+[2018-08-29 20:08:51 +0800] [29308] [INFO] Booting worker with pid: 29308
+[2018-08-29 20:08:51 +0800] [29308] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:08:51 +0800] [29308] [INFO] Worker exiting (pid: 29308)
+[2018-08-29 20:08:51 +0800] [29304] [INFO] Shutting down: Master
+[2018-08-29 20:08:51 +0800] [29304] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:09:07 +0800] [29311] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:09:07 +0800] [29311] [INFO] Listening at: http://127.0.0.1:8000 (29311)
+[2018-08-29 20:09:07 +0800] [29311] [INFO] Using worker: sync
+[2018-08-29 20:09:07 +0800] [29314] [INFO] Booting worker with pid: 29314
+[2018-08-29 20:09:07 +0800] [29314] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:07 +0800] [29314] [INFO] Worker exiting (pid: 29314)
+[2018-08-29 20:09:07 +0800] [29311] [INFO] Shutting down: Master
+[2018-08-29 20:09:07 +0800] [29311] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:09:08 +0800] [29315] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:09:08 +0800] [29315] [INFO] Listening at: http://127.0.0.1:8000 (29315)
+[2018-08-29 20:09:08 +0800] [29315] [INFO] Using worker: sync
+[2018-08-29 20:09:08 +0800] [29318] [INFO] Booting worker with pid: 29318
+[2018-08-29 20:09:08 +0800] [29318] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:08 +0800] [29318] [INFO] Worker exiting (pid: 29318)
+[2018-08-29 20:09:08 +0800] [29315] [INFO] Shutting down: Master
+[2018-08-29 20:09:08 +0800] [29315] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:09:11 +0800] [29319] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:09:11 +0800] [29319] [INFO] Listening at: http://127.0.0.1:8000 (29319)
+[2018-08-29 20:09:11 +0800] [29319] [INFO] Using worker: sync
+[2018-08-29 20:09:11 +0800] [29322] [INFO] Booting worker with pid: 29322
+[2018-08-29 20:09:11 +0800] [29322] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:11 +0800] [29322] [INFO] Worker exiting (pid: 29322)
+[2018-08-29 20:09:11 +0800] [29323] [INFO] Booting worker with pid: 29323
+[2018-08-29 20:09:11 +0800] [29323] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:11 +0800] [29323] [INFO] Worker exiting (pid: 29323)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 203, in run
+    self.manage_workers()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 545, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 617, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 245, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 61, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 223, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 232, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 345, in halt
+    self.stop()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 245, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2018-08-29 20:09:14 +0800] [29324] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:09:14 +0800] [29324] [INFO] Listening at: http://127.0.0.1:8000 (29324)
+[2018-08-29 20:09:14 +0800] [29324] [INFO] Using worker: sync
+[2018-08-29 20:09:14 +0800] [29327] [INFO] Booting worker with pid: 29327
+[2018-08-29 20:09:14 +0800] [29327] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:14 +0800] [29327] [INFO] Worker exiting (pid: 29327)
+[2018-08-29 20:09:14 +0800] [29328] [INFO] Booting worker with pid: 29328
+[2018-08-29 20:09:14 +0800] [29328] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:09:14 +0800] [29328] [INFO] Worker exiting (pid: 29328)
+[2018-08-29 20:09:14 +0800] [29324] [INFO] Shutting down: Master
+[2018-08-29 20:09:14 +0800] [29324] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:38 +0800] [29925] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:38 +0800] [29925] [INFO] Listening at: http://127.0.0.1:8000 (29925)
+[2018-08-29 20:26:38 +0800] [29925] [INFO] Using worker: sync
+[2018-08-29 20:26:38 +0800] [29929] [INFO] Booting worker with pid: 29929
+[2018-08-29 20:26:38 +0800] [29929] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:38 +0800] [29929] [INFO] Worker exiting (pid: 29929)
+[2018-08-29 20:26:38 +0800] [29930] [INFO] Booting worker with pid: 29930
+[2018-08-29 20:26:38 +0800] [29930] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:38 +0800] [29930] [INFO] Worker exiting (pid: 29930)
+[2018-08-29 20:26:38 +0800] [29925] [INFO] Shutting down: Master
+[2018-08-29 20:26:38 +0800] [29925] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:40 +0800] [29931] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:40 +0800] [29931] [INFO] Listening at: http://127.0.0.1:8000 (29931)
+[2018-08-29 20:26:40 +0800] [29931] [INFO] Using worker: sync
+[2018-08-29 20:26:40 +0800] [29934] [INFO] Booting worker with pid: 29934
+[2018-08-29 20:26:40 +0800] [29934] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:40 +0800] [29934] [INFO] Worker exiting (pid: 29934)
+[2018-08-29 20:26:40 +0800] [29931] [INFO] Shutting down: Master
+[2018-08-29 20:26:40 +0800] [29931] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:42 +0800] [29935] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:42 +0800] [29935] [INFO] Listening at: http://127.0.0.1:8000 (29935)
+[2018-08-29 20:26:42 +0800] [29935] [INFO] Using worker: sync
+[2018-08-29 20:26:42 +0800] [29938] [INFO] Booting worker with pid: 29938
+[2018-08-29 20:26:42 +0800] [29938] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:42 +0800] [29938] [INFO] Worker exiting (pid: 29938)
+[2018-08-29 20:26:42 +0800] [29935] [INFO] Shutting down: Master
+[2018-08-29 20:26:42 +0800] [29935] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:44 +0800] [29941] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:44 +0800] [29941] [INFO] Listening at: http://127.0.0.1:8000 (29941)
+[2018-08-29 20:26:44 +0800] [29941] [INFO] Using worker: sync
+[2018-08-29 20:26:44 +0800] [29944] [INFO] Booting worker with pid: 29944
+[2018-08-29 20:26:44 +0800] [29944] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:44 +0800] [29944] [INFO] Worker exiting (pid: 29944)
+[2018-08-29 20:26:44 +0800] [29941] [INFO] Shutting down: Master
+[2018-08-29 20:26:44 +0800] [29941] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:45 +0800] [29945] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:45 +0800] [29945] [INFO] Listening at: http://127.0.0.1:8000 (29945)
+[2018-08-29 20:26:45 +0800] [29945] [INFO] Using worker: sync
+[2018-08-29 20:26:45 +0800] [29948] [INFO] Booting worker with pid: 29948
+[2018-08-29 20:26:45 +0800] [29948] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:45 +0800] [29948] [INFO] Worker exiting (pid: 29948)
+[2018-08-29 20:26:45 +0800] [29949] [INFO] Booting worker with pid: 29949
+[2018-08-29 20:26:45 +0800] [29949] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:45 +0800] [29949] [INFO] Worker exiting (pid: 29949)
+[2018-08-29 20:26:46 +0800] [29945] [INFO] Shutting down: Master
+[2018-08-29 20:26:46 +0800] [29945] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:48 +0800] [29950] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:48 +0800] [29950] [INFO] Listening at: http://127.0.0.1:8000 (29950)
+[2018-08-29 20:26:48 +0800] [29950] [INFO] Using worker: sync
+[2018-08-29 20:26:48 +0800] [29953] [INFO] Booting worker with pid: 29953
+[2018-08-29 20:26:48 +0800] [29953] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:48 +0800] [29953] [INFO] Worker exiting (pid: 29953)
+[2018-08-29 20:26:48 +0800] [29954] [INFO] Booting worker with pid: 29954
+[2018-08-29 20:26:48 +0800] [29954] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:48 +0800] [29954] [INFO] Worker exiting (pid: 29954)
+[2018-08-29 20:26:48 +0800] [29950] [INFO] Shutting down: Master
+[2018-08-29 20:26:48 +0800] [29950] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:26:51 +0800] [29955] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:26:51 +0800] [29955] [INFO] Listening at: http://127.0.0.1:8000 (29955)
+[2018-08-29 20:26:51 +0800] [29955] [INFO] Using worker: sync
+[2018-08-29 20:26:51 +0800] [29958] [INFO] Booting worker with pid: 29958
+[2018-08-29 20:26:51 +0800] [29958] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:51 +0800] [29958] [INFO] Worker exiting (pid: 29958)
+[2018-08-29 20:26:51 +0800] [29959] [INFO] Booting worker with pid: 29959
+[2018-08-29 20:26:51 +0800] [29959] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:26:51 +0800] [29959] [INFO] Worker exiting (pid: 29959)
+[2018-08-29 20:26:52 +0800] [29955] [INFO] Shutting down: Master
+[2018-08-29 20:26:52 +0800] [29955] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:45:17 +0800] [30022] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:45:17 +0800] [30022] [INFO] Listening at: http://127.0.0.1:8000 (30022)
+[2018-08-29 20:45:17 +0800] [30022] [INFO] Using worker: sync
+[2018-08-29 20:45:17 +0800] [30025] [INFO] Booting worker with pid: 30025
+[2018-08-29 20:45:17 +0800] [30025] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:17 +0800] [30025] [INFO] Worker exiting (pid: 30025)
+[2018-08-29 20:45:17 +0800] [30026] [INFO] Booting worker with pid: 30026
+[2018-08-29 20:45:17 +0800] [30026] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:17 +0800] [30026] [INFO] Worker exiting (pid: 30026)
+[2018-08-29 20:45:17 +0800] [30022] [INFO] Shutting down: Master
+[2018-08-29 20:45:17 +0800] [30022] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:45:18 +0800] [30027] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:45:18 +0800] [30027] [INFO] Listening at: http://127.0.0.1:8000 (30027)
+[2018-08-29 20:45:18 +0800] [30027] [INFO] Using worker: sync
+[2018-08-29 20:45:18 +0800] [30030] [INFO] Booting worker with pid: 30030
+[2018-08-29 20:45:18 +0800] [30030] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:18 +0800] [30030] [INFO] Worker exiting (pid: 30030)
+[2018-08-29 20:45:18 +0800] [30031] [INFO] Booting worker with pid: 30031
+[2018-08-29 20:45:18 +0800] [30031] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:18 +0800] [30031] [INFO] Worker exiting (pid: 30031)
+[2018-08-29 20:45:18 +0800] [30027] [INFO] Shutting down: Master
+[2018-08-29 20:45:18 +0800] [30027] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:45:21 +0800] [30032] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:45:21 +0800] [30032] [INFO] Listening at: http://127.0.0.1:8000 (30032)
+[2018-08-29 20:45:21 +0800] [30032] [INFO] Using worker: sync
+[2018-08-29 20:45:21 +0800] [30035] [INFO] Booting worker with pid: 30035
+[2018-08-29 20:45:21 +0800] [30035] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:21 +0800] [30035] [INFO] Worker exiting (pid: 30035)
+[2018-08-29 20:45:21 +0800] [30032] [INFO] Shutting down: Master
+[2018-08-29 20:45:21 +0800] [30032] [INFO] Reason: Worker failed to boot.
+[2018-08-29 20:45:24 +0800] [30036] [INFO] Starting gunicorn 19.9.0
+[2018-08-29 20:45:24 +0800] [30036] [INFO] Listening at: http://127.0.0.1:8000 (30036)
+[2018-08-29 20:45:24 +0800] [30036] [INFO] Using worker: sync
+[2018-08-29 20:45:24 +0800] [30039] [INFO] Booting worker with pid: 30039
+[2018-08-29 20:45:24 +0800] [30039] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:24 +0800] [30039] [INFO] Worker exiting (pid: 30039)
+[2018-08-29 20:45:24 +0800] [30040] [INFO] Booting worker with pid: 30040
+[2018-08-29 20:45:24 +0800] [30040] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-29 20:45:24 +0800] [30040] [INFO] Worker exiting (pid: 30040)
+[2018-08-29 20:45:24 +0800] [30036] [INFO] Shutting down: Master
+[2018-08-29 20:45:24 +0800] [30036] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:11:33 +0800] [4051] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:11:33 +0800] [4051] [INFO] Listening at: http://127.0.0.1:8000 (4051)
+[2018-08-30 11:11:33 +0800] [4051] [INFO] Using worker: sync
+[2018-08-30 11:11:33 +0800] [4054] [INFO] Booting worker with pid: 4054
+[2018-08-30 11:11:33 +0800] [4054] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:33 +0800] [4054] [INFO] Worker exiting (pid: 4054)
+[2018-08-30 11:11:33 +0800] [4055] [INFO] Booting worker with pid: 4055
+[2018-08-30 11:11:33 +0800] [4055] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:33 +0800] [4055] [INFO] Worker exiting (pid: 4055)
+[2018-08-30 11:11:33 +0800] [4051] [INFO] Shutting down: Master
+[2018-08-30 11:11:33 +0800] [4051] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:11:34 +0800] [4056] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:11:34 +0800] [4056] [INFO] Listening at: http://127.0.0.1:8000 (4056)
+[2018-08-30 11:11:34 +0800] [4056] [INFO] Using worker: sync
+[2018-08-30 11:11:34 +0800] [4059] [INFO] Booting worker with pid: 4059
+[2018-08-30 11:11:34 +0800] [4059] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:34 +0800] [4059] [INFO] Worker exiting (pid: 4059)
+[2018-08-30 11:11:34 +0800] [4060] [INFO] Booting worker with pid: 4060
+[2018-08-30 11:11:34 +0800] [4060] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:34 +0800] [4060] [INFO] Worker exiting (pid: 4060)
+[2018-08-30 11:11:35 +0800] [4056] [INFO] Shutting down: Master
+[2018-08-30 11:11:35 +0800] [4056] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:11:37 +0800] [4061] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:11:37 +0800] [4061] [INFO] Listening at: http://127.0.0.1:8000 (4061)
+[2018-08-30 11:11:37 +0800] [4061] [INFO] Using worker: sync
+[2018-08-30 11:11:37 +0800] [4064] [INFO] Booting worker with pid: 4064
+[2018-08-30 11:11:37 +0800] [4064] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:37 +0800] [4064] [INFO] Worker exiting (pid: 4064)
+[2018-08-30 11:11:37 +0800] [4065] [INFO] Booting worker with pid: 4065
+[2018-08-30 11:11:37 +0800] [4065] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:37 +0800] [4065] [INFO] Worker exiting (pid: 4065)
+[2018-08-30 11:11:37 +0800] [4061] [INFO] Shutting down: Master
+[2018-08-30 11:11:37 +0800] [4061] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:11:40 +0800] [4066] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:11:40 +0800] [4066] [INFO] Listening at: http://127.0.0.1:8000 (4066)
+[2018-08-30 11:11:40 +0800] [4066] [INFO] Using worker: sync
+[2018-08-30 11:11:40 +0800] [4069] [INFO] Booting worker with pid: 4069
+[2018-08-30 11:11:40 +0800] [4069] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:11:40 +0800] [4069] [INFO] Worker exiting (pid: 4069)
+[2018-08-30 11:11:40 +0800] [4066] [INFO] Shutting down: Master
+[2018-08-30 11:11:40 +0800] [4066] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:29:04 +0800] [4239] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:29:04 +0800] [4239] [INFO] Listening at: http://127.0.0.1:8000 (4239)
+[2018-08-30 11:29:04 +0800] [4239] [INFO] Using worker: sync
+[2018-08-30 11:29:04 +0800] [4242] [INFO] Booting worker with pid: 4242
+[2018-08-30 11:29:04 +0800] [4242] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:04 +0800] [4242] [INFO] Worker exiting (pid: 4242)
+[2018-08-30 11:29:04 +0800] [4239] [INFO] Shutting down: Master
+[2018-08-30 11:29:04 +0800] [4239] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:29:05 +0800] [4243] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:29:05 +0800] [4243] [INFO] Listening at: http://127.0.0.1:8000 (4243)
+[2018-08-30 11:29:05 +0800] [4243] [INFO] Using worker: sync
+[2018-08-30 11:29:05 +0800] [4246] [INFO] Booting worker with pid: 4246
+[2018-08-30 11:29:05 +0800] [4246] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:05 +0800] [4246] [INFO] Worker exiting (pid: 4246)
+[2018-08-30 11:29:06 +0800] [4243] [INFO] Shutting down: Master
+[2018-08-30 11:29:06 +0800] [4243] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:29:08 +0800] [4252] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:29:08 +0800] [4252] [INFO] Listening at: http://127.0.0.1:8000 (4252)
+[2018-08-30 11:29:08 +0800] [4252] [INFO] Using worker: sync
+[2018-08-30 11:29:08 +0800] [4255] [INFO] Booting worker with pid: 4255
+[2018-08-30 11:29:08 +0800] [4255] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:08 +0800] [4255] [INFO] Worker exiting (pid: 4255)
+[2018-08-30 11:29:08 +0800] [4256] [INFO] Booting worker with pid: 4256
+[2018-08-30 11:29:08 +0800] [4256] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:08 +0800] [4256] [INFO] Worker exiting (pid: 4256)
+[2018-08-30 11:29:08 +0800] [4252] [INFO] Shutting down: Master
+[2018-08-30 11:29:08 +0800] [4252] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:29:11 +0800] [4257] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:29:11 +0800] [4257] [INFO] Listening at: http://127.0.0.1:8000 (4257)
+[2018-08-30 11:29:11 +0800] [4257] [INFO] Using worker: sync
+[2018-08-30 11:29:11 +0800] [4260] [INFO] Booting worker with pid: 4260
+[2018-08-30 11:29:11 +0800] [4260] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:11 +0800] [4260] [INFO] Worker exiting (pid: 4260)
+[2018-08-30 11:29:11 +0800] [4261] [INFO] Booting worker with pid: 4261
+[2018-08-30 11:29:11 +0800] [4261] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:29:11 +0800] [4261] [INFO] Worker exiting (pid: 4261)
+[2018-08-30 11:29:12 +0800] [4257] [INFO] Shutting down: Master
+[2018-08-30 11:29:12 +0800] [4257] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:33:26 +0800] [4325] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:33:26 +0800] [4325] [INFO] Listening at: http://127.0.0.1:8000 (4325)
+[2018-08-30 11:33:26 +0800] [4325] [INFO] Using worker: sync
+[2018-08-30 11:33:26 +0800] [4329] [INFO] Booting worker with pid: 4329
+[2018-08-30 11:33:26 +0800] [4329] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:26 +0800] [4329] [INFO] Worker exiting (pid: 4329)
+[2018-08-30 11:33:26 +0800] [4325] [INFO] Shutting down: Master
+[2018-08-30 11:33:26 +0800] [4325] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:33:28 +0800] [4332] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:33:28 +0800] [4332] [INFO] Listening at: http://127.0.0.1:8000 (4332)
+[2018-08-30 11:33:28 +0800] [4332] [INFO] Using worker: sync
+[2018-08-30 11:33:28 +0800] [4335] [INFO] Booting worker with pid: 4335
+[2018-08-30 11:33:28 +0800] [4335] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:28 +0800] [4335] [INFO] Worker exiting (pid: 4335)
+[2018-08-30 11:33:28 +0800] [4332] [INFO] Shutting down: Master
+[2018-08-30 11:33:28 +0800] [4332] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:33:30 +0800] [4336] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:33:30 +0800] [4336] [INFO] Listening at: http://127.0.0.1:8000 (4336)
+[2018-08-30 11:33:30 +0800] [4336] [INFO] Using worker: sync
+[2018-08-30 11:33:30 +0800] [4339] [INFO] Booting worker with pid: 4339
+[2018-08-30 11:33:30 +0800] [4339] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:30 +0800] [4339] [INFO] Worker exiting (pid: 4339)
+[2018-08-30 11:33:30 +0800] [4336] [INFO] Shutting down: Master
+[2018-08-30 11:33:30 +0800] [4336] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:33:32 +0800] [4340] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:33:32 +0800] [4340] [INFO] Listening at: http://127.0.0.1:8000 (4340)
+[2018-08-30 11:33:32 +0800] [4340] [INFO] Using worker: sync
+[2018-08-30 11:33:32 +0800] [4343] [INFO] Booting worker with pid: 4343
+[2018-08-30 11:33:32 +0800] [4343] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:32 +0800] [4343] [INFO] Worker exiting (pid: 4343)
+[2018-08-30 11:33:32 +0800] [4344] [INFO] Booting worker with pid: 4344
+[2018-08-30 11:33:32 +0800] [4344] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:32 +0800] [4344] [INFO] Worker exiting (pid: 4344)
+[2018-08-30 11:33:32 +0800] [4340] [INFO] Shutting down: Master
+[2018-08-30 11:33:32 +0800] [4340] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:33:35 +0800] [4345] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:33:35 +0800] [4345] [INFO] Listening at: http://127.0.0.1:8000 (4345)
+[2018-08-30 11:33:35 +0800] [4345] [INFO] Using worker: sync
+[2018-08-30 11:33:35 +0800] [4348] [INFO] Booting worker with pid: 4348
+[2018-08-30 11:33:35 +0800] [4348] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:35 +0800] [4348] [INFO] Worker exiting (pid: 4348)
+[2018-08-30 11:33:35 +0800] [4349] [INFO] Booting worker with pid: 4349
+[2018-08-30 11:33:35 +0800] [4349] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:33:36 +0800] [4349] [INFO] Worker exiting (pid: 4349)
+[2018-08-30 11:33:36 +0800] [4345] [INFO] Shutting down: Master
+[2018-08-30 11:33:36 +0800] [4345] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:40:59 +0800] [4379] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:40:59 +0800] [4379] [INFO] Listening at: http://127.0.0.1:8000 (4379)
+[2018-08-30 11:40:59 +0800] [4379] [INFO] Using worker: sync
+[2018-08-30 11:40:59 +0800] [4382] [INFO] Booting worker with pid: 4382
+[2018-08-30 11:40:59 +0800] [4382] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:40:59 +0800] [4382] [INFO] Worker exiting (pid: 4382)
+[2018-08-30 11:40:59 +0800] [4379] [INFO] Shutting down: Master
+[2018-08-30 11:40:59 +0800] [4379] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:41:00 +0800] [4383] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:41:00 +0800] [4383] [INFO] Listening at: http://127.0.0.1:8000 (4383)
+[2018-08-30 11:41:00 +0800] [4383] [INFO] Using worker: sync
+[2018-08-30 11:41:00 +0800] [4386] [INFO] Booting worker with pid: 4386
+[2018-08-30 11:41:00 +0800] [4386] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:41:00 +0800] [4386] [INFO] Worker exiting (pid: 4386)
+[2018-08-30 11:41:00 +0800] [4387] [INFO] Booting worker with pid: 4387
+[2018-08-30 11:41:00 +0800] [4387] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:41:00 +0800] [4387] [INFO] Worker exiting (pid: 4387)
+[2018-08-30 11:41:01 +0800] [4383] [INFO] Shutting down: Master
+[2018-08-30 11:41:01 +0800] [4383] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:41:03 +0800] [4388] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:41:03 +0800] [4388] [INFO] Listening at: http://127.0.0.1:8000 (4388)
+[2018-08-30 11:41:03 +0800] [4388] [INFO] Using worker: sync
+[2018-08-30 11:41:03 +0800] [4391] [INFO] Booting worker with pid: 4391
+[2018-08-30 11:41:03 +0800] [4391] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:41:03 +0800] [4391] [INFO] Worker exiting (pid: 4391)
+[2018-08-30 11:41:03 +0800] [4388] [INFO] Shutting down: Master
+[2018-08-30 11:41:03 +0800] [4388] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:41:06 +0800] [4394] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:41:06 +0800] [4394] [INFO] Listening at: http://127.0.0.1:8000 (4394)
+[2018-08-30 11:41:06 +0800] [4394] [INFO] Using worker: sync
+[2018-08-30 11:41:06 +0800] [4397] [INFO] Booting worker with pid: 4397
+[2018-08-30 11:41:06 +0800] [4397] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:41:06 +0800] [4397] [INFO] Worker exiting (pid: 4397)
+[2018-08-30 11:41:06 +0800] [4394] [INFO] Shutting down: Master
+[2018-08-30 11:41:06 +0800] [4394] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:14 +0800] [4426] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:14 +0800] [4426] [INFO] Listening at: http://127.0.0.1:8000 (4426)
+[2018-08-30 11:48:14 +0800] [4426] [INFO] Using worker: sync
+[2018-08-30 11:48:14 +0800] [4429] [INFO] Booting worker with pid: 4429
+[2018-08-30 11:48:14 +0800] [4429] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:14 +0800] [4429] [INFO] Worker exiting (pid: 4429)
+[2018-08-30 11:48:14 +0800] [4430] [INFO] Booting worker with pid: 4430
+[2018-08-30 11:48:14 +0800] [4430] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:14 +0800] [4430] [INFO] Worker exiting (pid: 4430)
+[2018-08-30 11:48:14 +0800] [4426] [INFO] Shutting down: Master
+[2018-08-30 11:48:14 +0800] [4426] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:16 +0800] [4433] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:16 +0800] [4433] [INFO] Listening at: http://127.0.0.1:8000 (4433)
+[2018-08-30 11:48:16 +0800] [4433] [INFO] Using worker: sync
+[2018-08-30 11:48:16 +0800] [4436] [INFO] Booting worker with pid: 4436
+[2018-08-30 11:48:16 +0800] [4436] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:16 +0800] [4436] [INFO] Worker exiting (pid: 4436)
+[2018-08-30 11:48:16 +0800] [4433] [INFO] Shutting down: Master
+[2018-08-30 11:48:16 +0800] [4433] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:19 +0800] [4437] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:19 +0800] [4437] [INFO] Listening at: http://127.0.0.1:8000 (4437)
+[2018-08-30 11:48:19 +0800] [4437] [INFO] Using worker: sync
+[2018-08-30 11:48:19 +0800] [4440] [INFO] Booting worker with pid: 4440
+[2018-08-30 11:48:19 +0800] [4440] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:19 +0800] [4440] [INFO] Worker exiting (pid: 4440)
+[2018-08-30 11:48:19 +0800] [4437] [INFO] Shutting down: Master
+[2018-08-30 11:48:19 +0800] [4437] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:22 +0800] [4443] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:22 +0800] [4443] [INFO] Listening at: http://127.0.0.1:8000 (4443)
+[2018-08-30 11:48:22 +0800] [4443] [INFO] Using worker: sync
+[2018-08-30 11:48:22 +0800] [4446] [INFO] Booting worker with pid: 4446
+[2018-08-30 11:48:22 +0800] [4446] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:22 +0800] [4446] [INFO] Worker exiting (pid: 4446)
+[2018-08-30 11:48:22 +0800] [4447] [INFO] Booting worker with pid: 4447
+[2018-08-30 11:48:22 +0800] [4447] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:22 +0800] [4447] [INFO] Worker exiting (pid: 4447)
+[2018-08-30 11:48:22 +0800] [4443] [INFO] Shutting down: Master
+[2018-08-30 11:48:22 +0800] [4443] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:33 +0800] [4450] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:33 +0800] [4450] [INFO] Listening at: http://127.0.0.1:8000 (4450)
+[2018-08-30 11:48:33 +0800] [4450] [INFO] Using worker: sync
+[2018-08-30 11:48:33 +0800] [4453] [INFO] Booting worker with pid: 4453
+[2018-08-30 11:48:33 +0800] [4453] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:33 +0800] [4453] [INFO] Worker exiting (pid: 4453)
+[2018-08-30 11:48:33 +0800] [4450] [INFO] Shutting down: Master
+[2018-08-30 11:48:33 +0800] [4450] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:35 +0800] [4454] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:35 +0800] [4454] [INFO] Listening at: http://127.0.0.1:8000 (4454)
+[2018-08-30 11:48:35 +0800] [4454] [INFO] Using worker: sync
+[2018-08-30 11:48:35 +0800] [4459] [INFO] Booting worker with pid: 4459
+[2018-08-30 11:48:35 +0800] [4459] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:35 +0800] [4459] [INFO] Worker exiting (pid: 4459)
+[2018-08-30 11:48:35 +0800] [4460] [INFO] Booting worker with pid: 4460
+[2018-08-30 11:48:35 +0800] [4460] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:35 +0800] [4460] [INFO] Worker exiting (pid: 4460)
+[2018-08-30 11:48:35 +0800] [4454] [INFO] Shutting down: Master
+[2018-08-30 11:48:35 +0800] [4454] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:37 +0800] [4461] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:37 +0800] [4461] [INFO] Listening at: http://127.0.0.1:8000 (4461)
+[2018-08-30 11:48:37 +0800] [4461] [INFO] Using worker: sync
+[2018-08-30 11:48:37 +0800] [4464] [INFO] Booting worker with pid: 4464
+[2018-08-30 11:48:37 +0800] [4464] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:37 +0800] [4464] [INFO] Worker exiting (pid: 4464)
+[2018-08-30 11:48:37 +0800] [4465] [INFO] Booting worker with pid: 4465
+[2018-08-30 11:48:37 +0800] [4465] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:37 +0800] [4465] [INFO] Worker exiting (pid: 4465)
+[2018-08-30 11:48:37 +0800] [4461] [INFO] Shutting down: Master
+[2018-08-30 11:48:37 +0800] [4461] [INFO] Reason: Worker failed to boot.
+[2018-08-30 11:48:41 +0800] [4466] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 11:48:41 +0800] [4466] [INFO] Listening at: http://127.0.0.1:8000 (4466)
+[2018-08-30 11:48:41 +0800] [4466] [INFO] Using worker: sync
+[2018-08-30 11:48:41 +0800] [4469] [INFO] Booting worker with pid: 4469
+[2018-08-30 11:48:41 +0800] [4469] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:41 +0800] [4469] [INFO] Worker exiting (pid: 4469)
+[2018-08-30 11:48:41 +0800] [4470] [INFO] Booting worker with pid: 4470
+[2018-08-30 11:48:41 +0800] [4470] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 11:48:41 +0800] [4470] [INFO] Worker exiting (pid: 4470)
+[2018-08-30 11:48:41 +0800] [4466] [INFO] Shutting down: Master
+[2018-08-30 11:48:41 +0800] [4466] [INFO] Reason: Worker failed to boot.
+[2018-08-30 14:23:16 +0800] [5229] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 14:23:16 +0800] [5229] [INFO] Listening at: http://127.0.0.1:8000 (5229)
+[2018-08-30 14:23:16 +0800] [5229] [INFO] Using worker: sync
+[2018-08-30 14:23:16 +0800] [5232] [INFO] Booting worker with pid: 5232
+[2018-08-30 14:23:16 +0800] [5232] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 14:23:16 +0800] [5233] [INFO] Booting worker with pid: 5233
+[2018-08-30 14:23:16 +0800] [5232] [INFO] Worker exiting (pid: 5232)
+[2018-08-30 14:23:16 +0800] [5233] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 14:23:16 +0800] [5233] [INFO] Worker exiting (pid: 5233)
+[2018-08-30 14:23:16 +0800] [5229] [INFO] Shutting down: Master
+[2018-08-30 14:23:16 +0800] [5229] [INFO] Reason: Worker failed to boot.
+[2018-08-30 14:23:17 +0800] [5234] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 14:23:17 +0800] [5234] [INFO] Listening at: http://127.0.0.1:8000 (5234)
+[2018-08-30 14:23:17 +0800] [5234] [INFO] Using worker: sync
+[2018-08-30 14:23:17 +0800] [5237] [INFO] Booting worker with pid: 5237
+[2018-08-30 14:23:17 +0800] [5237] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 14:23:17 +0800] [5237] [INFO] Worker exiting (pid: 5237)
+[2018-08-30 14:23:17 +0800] [5234] [INFO] Shutting down: Master
+[2018-08-30 14:23:17 +0800] [5234] [INFO] Reason: Worker failed to boot.
+[2018-08-30 14:23:20 +0800] [5238] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 14:23:20 +0800] [5238] [INFO] Listening at: http://127.0.0.1:8000 (5238)
+[2018-08-30 14:23:20 +0800] [5238] [INFO] Using worker: sync
+[2018-08-30 14:23:20 +0800] [5241] [INFO] Booting worker with pid: 5241
+[2018-08-30 14:23:20 +0800] [5241] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 14:23:20 +0800] [5241] [INFO] Worker exiting (pid: 5241)
+[2018-08-30 14:23:20 +0800] [5238] [INFO] Shutting down: Master
+[2018-08-30 14:23:20 +0800] [5238] [INFO] Reason: Worker failed to boot.
+[2018-08-30 14:23:23 +0800] [5242] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 14:23:23 +0800] [5242] [INFO] Listening at: http://127.0.0.1:8000 (5242)
+[2018-08-30 14:23:23 +0800] [5242] [INFO] Using worker: sync
+[2018-08-30 14:23:23 +0800] [5245] [INFO] Booting worker with pid: 5245
+[2018-08-30 14:23:23 +0800] [5245] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 14:23:23 +0800] [5245] [INFO] Worker exiting (pid: 5245)
+[2018-08-30 14:23:23 +0800] [5242] [INFO] Shutting down: Master
+[2018-08-30 14:23:23 +0800] [5242] [INFO] Reason: Worker failed to boot.
+python: can't open file 'gunicorn': [Errno 2] No such file or directory
+python: can't open file 'gunicorn': [Errno 2] No such file or directory
+python: can't open file 'gunicorn': [Errno 2] No such file or directory
+python: can't open file 'gunicorn': [Errno 2] No such file or directory
+[2018-08-30 16:45:06 +0800] [5691] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:45:06 +0800] [5691] [INFO] Listening at: http://127.0.0.1:8000 (5691)
+[2018-08-30 16:45:06 +0800] [5691] [INFO] Using worker: sync
+[2018-08-30 16:45:06 +0800] [5694] [INFO] Booting worker with pid: 5694
+[2018-08-30 16:45:06 +0800] [5695] [INFO] Booting worker with pid: 5695
+[2018-08-30 16:45:06 +0800] [5694] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:06 +0800] [5694] [INFO] Worker exiting (pid: 5694)
+[2018-08-30 16:45:06 +0800] [5695] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:06 +0800] [5695] [INFO] Worker exiting (pid: 5695)
+[2018-08-30 16:45:06 +0800] [5691] [INFO] Shutting down: Master
+[2018-08-30 16:45:06 +0800] [5691] [INFO] Reason: Worker failed to boot.
+[2018-08-30 16:45:07 +0800] [5696] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:45:07 +0800] [5696] [INFO] Listening at: http://127.0.0.1:8000 (5696)
+[2018-08-30 16:45:07 +0800] [5696] [INFO] Using worker: sync
+[2018-08-30 16:45:07 +0800] [5699] [INFO] Booting worker with pid: 5699
+[2018-08-30 16:45:07 +0800] [5699] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:07 +0800] [5699] [INFO] Worker exiting (pid: 5699)
+[2018-08-30 16:45:07 +0800] [5700] [INFO] Booting worker with pid: 5700
+[2018-08-30 16:45:08 +0800] [5700] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:08 +0800] [5700] [INFO] Worker exiting (pid: 5700)
+[2018-08-30 16:45:08 +0800] [5696] [INFO] Shutting down: Master
+[2018-08-30 16:45:08 +0800] [5696] [INFO] Reason: Worker failed to boot.
+[2018-08-30 16:45:10 +0800] [5701] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:45:10 +0800] [5701] [INFO] Listening at: http://127.0.0.1:8000 (5701)
+[2018-08-30 16:45:10 +0800] [5701] [INFO] Using worker: sync
+[2018-08-30 16:45:10 +0800] [5704] [INFO] Booting worker with pid: 5704
+[2018-08-30 16:45:10 +0800] [5704] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:10 +0800] [5704] [INFO] Worker exiting (pid: 5704)
+[2018-08-30 16:45:10 +0800] [5701] [INFO] Shutting down: Master
+[2018-08-30 16:45:10 +0800] [5701] [INFO] Reason: Worker failed to boot.
+[2018-08-30 16:45:13 +0800] [5705] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:45:13 +0800] [5705] [INFO] Listening at: http://127.0.0.1:8000 (5705)
+[2018-08-30 16:45:13 +0800] [5705] [INFO] Using worker: sync
+[2018-08-30 16:45:13 +0800] [5708] [INFO] Booting worker with pid: 5708
+[2018-08-30 16:45:13 +0800] [5708] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:13 +0800] [5708] [INFO] Worker exiting (pid: 5708)
+[2018-08-30 16:45:13 +0800] [5709] [INFO] Booting worker with pid: 5709
+[2018-08-30 16:45:13 +0800] [5709] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/dingzq/axfnginx/AXF_Project/__init__.py", line 1, in <module>
+    import pymysql
+ImportError: No module named 'pymysql'
+[2018-08-30 16:45:13 +0800] [5709] [INFO] Worker exiting (pid: 5709)
+[2018-08-30 16:45:13 +0800] [5705] [INFO] Shutting down: Master
+[2018-08-30 16:45:13 +0800] [5705] [INFO] Reason: Worker failed to boot.
+[2018-08-30 16:50:54 +0800] [5773] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:50:54 +0800] [5773] [INFO] Listening at: http://127.0.0.1:8000 (5773)
+[2018-08-30 16:50:54 +0800] [5773] [INFO] Using worker: sync
+[2018-08-30 16:50:54 +0800] [5777] [INFO] Booting worker with pid: 5777
+[2018-08-30 16:50:54 +0800] [5778] [INFO] Booting worker with pid: 5778
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+[2018-08-30 16:53:10 +0800] [5773] [INFO] Handling signal: term
+[2018-08-30 16:53:10 +0800] [5778] [INFO] Worker exiting (pid: 5778)
+[2018-08-30 16:53:10 +0800] [5777] [INFO] Worker exiting (pid: 5777)
+[2018-08-30 16:53:11 +0800] [5773] [INFO] Shutting down: Master
+[2018-08-30 16:53:12 +0800] [5930] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:53:12 +0800] [5930] [INFO] Listening at: http://127.0.0.1:8000 (5930)
+[2018-08-30 16:53:12 +0800] [5930] [INFO] Using worker: sync
+[2018-08-30 16:53:12 +0800] [5933] [INFO] Booting worker with pid: 5933
+[2018-08-30 16:53:12 +0800] [5934] [INFO] Booting worker with pid: 5934
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dingzq'@'106.12.110.107' (using password: NO)")
+[2018-08-30 16:54:20 +0800] [5930] [INFO] Handling signal: term
+[2018-08-30 16:54:20 +0800] [5934] [INFO] Worker exiting (pid: 5934)
+[2018-08-30 16:54:20 +0800] [5933] [INFO] Worker exiting (pid: 5933)
+[2018-08-30 16:54:20 +0800] [5930] [INFO] Shutting down: Master
+[2018-08-30 16:54:22 +0800] [5986] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:54:22 +0800] [5986] [INFO] Listening at: http://127.0.0.1:8000 (5986)
+[2018-08-30 16:54:22 +0800] [5986] [INFO] Using worker: sync
+[2018-08-30 16:54:22 +0800] [5989] [INFO] Booting worker with pid: 5989
+[2018-08-30 16:54:22 +0800] [5990] [INFO] Booting worker with pid: 5990
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'106.12.110.107' (using password: NO)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'106.12.110.107' (using password: NO)")
+[2018-08-30 16:55:13 +0800] [5986] [INFO] Handling signal: term
+[2018-08-30 16:55:13 +0800] [5989] [INFO] Worker exiting (pid: 5989)
+[2018-08-30 16:55:13 +0800] [5990] [INFO] Worker exiting (pid: 5990)
+[2018-08-30 16:55:14 +0800] [5986] [INFO] Shutting down: Master
+[2018-08-30 16:55:15 +0800] [6005] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:55:15 +0800] [6005] [INFO] Listening at: http://127.0.0.1:8000 (6005)
+[2018-08-30 16:55:15 +0800] [6005] [INFO] Using worker: sync
+[2018-08-30 16:55:15 +0800] [6008] [INFO] Booting worker with pid: 6008
+[2018-08-30 16:55:15 +0800] [6009] [INFO] Booting worker with pid: 6009
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'106.12.110.107' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 882, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'root'@'106.12.110.107' (using password: YES)")
+[2018-08-30 16:56:34 +0800] [6005] [INFO] Handling signal: term
+[2018-08-30 16:56:34 +0800] [6009] [INFO] Worker exiting (pid: 6009)
+[2018-08-30 16:56:34 +0800] [6008] [INFO] Worker exiting (pid: 6008)
+[2018-08-30 16:56:34 +0800] [6005] [INFO] Shutting down: Master
+[2018-08-30 16:56:36 +0800] [6018] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 16:56:36 +0800] [6018] [INFO] Listening at: http://127.0.0.1:8000 (6018)
+[2018-08-30 16:56:36 +0800] [6018] [INFO] Using worker: sync
+[2018-08-30 16:56:36 +0800] [6021] [INFO] Booting worker with pid: 6021
+[2018-08-30 16:56:36 +0800] [6022] [INFO] Booting worker with pid: 6022
+Not Found: /
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /
+Not Found: /
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+Not Found: /axf/axf/login
+[2018-08-30 20:42:41 +0800] [6018] [INFO] Handling signal: term
+[2018-08-30 20:42:41 +0800] [6021] [INFO] Worker exiting (pid: 6021)
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+[2018-08-30 20:42:41 +0800] [6022] [INFO] Worker exiting (pid: 6022)
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+[2018-08-30 20:42:41 +0800] [6018] [INFO] Shutting down: Master
+[2018-08-30 20:42:43 +0800] [7618] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 20:42:43 +0800] [7618] [INFO] Listening at: http://127.0.0.1:8000 (7618)
+[2018-08-30 20:42:43 +0800] [7618] [INFO] Using worker: sync
+[2018-08-30 20:42:43 +0800] [7621] [INFO] Booting worker with pid: 7621
+[2018-08-30 20:42:43 +0800] [7622] [INFO] Booting worker with pid: 7622
+Not Found: /axf/axf/login
+[2018-08-30 20:59:31 +0800] [7618] [INFO] Handling signal: term
+[2018-08-30 20:59:31 +0800] [7622] [INFO] Worker exiting (pid: 7622)
+[2018-08-30 20:59:31 +0800] [7621] [INFO] Worker exiting (pid: 7621)
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+http://106.12.110.107/static/uploads/icons/3_c7I06wS.jpg
+[2018-08-30 20:59:31 +0800] [7618] [INFO] Shutting down: Master
+[2018-08-30 20:59:32 +0800] [7823] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 20:59:32 +0800] [7823] [INFO] Listening at: http://127.0.0.1:8000 (7823)
+[2018-08-30 20:59:32 +0800] [7823] [INFO] Using worker: sync
+[2018-08-30 20:59:32 +0800] [7828] [INFO] Booting worker with pid: 7828
+[2018-08-30 20:59:32 +0800] [7829] [INFO] Booting worker with pid: 7829
+Not Found: /
+[2018-08-30 21:01:05 +0800] [7823] [INFO] Handling signal: term
+[2018-08-30 21:01:05 +0800] [7829] [INFO] Worker exiting (pid: 7829)
+[2018-08-30 21:01:05 +0800] [7828] [INFO] Worker exiting (pid: 7828)
+[2018-08-30 21:01:05 +0800] [7823] [INFO] Shutting down: Master
+[2018-08-30 21:01:06 +0800] [7845] [INFO] Starting gunicorn 19.9.0
+[2018-08-30 21:01:06 +0800] [7845] [INFO] Listening at: http://127.0.0.1:8000 (7845)
+[2018-08-30 21:01:06 +0800] [7845] [INFO] Using worker: sync
+[2018-08-30 21:01:06 +0800] [7848] [INFO] Booting worker with pid: 7848
+[2018-08-30 21:01:06 +0800] [7849] [INFO] Booting worker with pid: 7849
+Internal Server Error: /axf/mine
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 202, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dzq'@'106.12.110.107' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 65, in mine
+    if isinstance(user,MyUser):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 386, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 871, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 436, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 373, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/where.py", line 79, in as_sql
+    sql, params = compiler.compile(child)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 373, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/lookups.py", line 169, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/lookups.py", line 162, in process_lhs
+    db_type = self.lhs.output_field.db_type(connection=connection)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 644, in db_type
+    return connection.data_types[self.get_internal_type()] % data
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 174, in data_types
+    if self.features.supports_microsecond_precision:
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/features.py", line 53, in supports_microsecond_precision
+    return self.connection.mysql_version >= (5, 6, 4) and Database.version_info >= (1, 2, 5)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 385, in mysql_version
+    with self.temporary_connection() as cursor:
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 591, in temporary_connection
+    cursor = self.cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 254, in cursor
+    return self._cursor()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 229, in _cursor
+    self.ensure_connection()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 213, in ensure_connection
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/base/base.py", line 189, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 274, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 704, in __init__
+    self.connect()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 974, in connect
+    self._request_authentication()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1203, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1045, "Access denied for user 'dzq'@'106.12.110.107' (using password: YES)")
+[2018-09-06 17:09:05 +0800] [2490] [INFO] Handling signal: term
+[2018-09-06 17:09:05 +0800] [2493] [INFO] Worker exiting (pid: 2493)
+[2018-09-06 17:09:05 +0800] [2494] [INFO] Worker exiting (pid: 2494)
+[2018-09-06 17:09:06 +0800] [2490] [INFO] Shutting down: Master
+[2018-09-06 17:09:07 +0800] [2525] [INFO] Starting gunicorn 19.9.0
+[2018-09-06 17:09:07 +0800] [2525] [INFO] Listening at: http://127.0.0.1:8000 (2525)
+[2018-09-06 17:09:07 +0800] [2525] [INFO] Using worker: sync
+[2018-09-06 17:09:07 +0800] [2528] [INFO] Booting worker with pid: 2528
+[2018-09-06 17:09:07 +0800] [2529] [INFO] Booting worker with pid: 2529
+[2018-09-06 17:09:09 +0800] [2525] [INFO] Handling signal: term
+[2018-09-06 17:09:09 +0800] [2528] [INFO] Worker exiting (pid: 2528)
+[2018-09-06 17:09:09 +0800] [2529] [INFO] Worker exiting (pid: 2529)
+[2018-09-06 17:09:09 +0800] [2525] [INFO] Shutting down: Master
+[2018-09-06 17:09:10 +0800] [2534] [INFO] Starting gunicorn 19.9.0
+[2018-09-06 17:09:10 +0800] [2534] [INFO] Listening at: http://127.0.0.1:8000 (2534)
+[2018-09-06 17:09:10 +0800] [2534] [INFO] Using worker: sync
+[2018-09-06 17:09:10 +0800] [2537] [INFO] Booting worker with pid: 2537
+[2018-09-06 17:09:11 +0800] [2538] [INFO] Booting worker with pid: 2538
+Internal Server Error: /axf/mine
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 202, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'AXF.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 65, in mine
+    if isinstance(user,MyUser):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/functional.py", line 386, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'AXF.django_session' doesn't exist")
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'AXF.axf_shop' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'AXF.axf_shop' doesn't exist")
+Internal Server Error: /axf/home
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'AXF.axf_shop' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dingzq/axfnginx/axf/views.py", line 31, in home
+    'shop0':shops[0],
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 289, in __getitem__
+    return list(qs)[0]
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 250, in __iter__
+    self._fetch_all()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/dingzq/.local/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'AXF.axf_shop' doesn't exist")
+[2018-09-06 17:25:57 +0800] [2534] [INFO] Handling signal: term
+[2018-09-06 17:25:57 +0800] [2537] [INFO] Worker exiting (pid: 2537)
+[2018-09-06 17:25:57 +0800] [2538] [INFO] Worker exiting (pid: 2538)
+[2018-09-06 17:25:57 +0800] [2534] [INFO] Shutting down: Master
+[2018-09-06 17:25:59 +0800] [2607] [INFO] Starting gunicorn 19.9.0
+[2018-09-06 17:25:59 +0800] [2607] [INFO] Listening at: http://127.0.0.1:8000 (2607)
+[2018-09-06 17:25:59 +0800] [2607] [INFO] Using worker: sync
+[2018-09-06 17:25:59 +0800] [2610] [INFO] Booting worker with pid: 2610
+[2018-09-06 17:25:59 +0800] [2611] [INFO] Booting worker with pid: 2611
+[2018-09-06 17:26:01 +0800] [2607] [INFO] Handling signal: term
+[2018-09-06 17:26:01 +0800] [2610] [INFO] Worker exiting (pid: 2610)
+[2018-09-06 17:26:01 +0800] [2611] [INFO] Worker exiting (pid: 2611)
+[2018-09-06 17:26:02 +0800] [2607] [INFO] Shutting down: Master
+[2018-09-06 17:26:03 +0800] [2616] [INFO] Starting gunicorn 19.9.0
+[2018-09-06 17:26:03 +0800] [2616] [INFO] Listening at: http://127.0.0.1:8000 (2616)
+[2018-09-06 17:26:03 +0800] [2616] [INFO] Using worker: sync
+[2018-09-06 17:26:03 +0800] [2619] [INFO] Booting worker with pid: 2619
+[2018-09-06 17:26:03 +0800] [2621] [INFO] Booting worker with pid: 2621
